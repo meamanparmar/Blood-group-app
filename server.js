@@ -27,11 +27,20 @@ app.use("/api/v1/inventory", require("./routes/inventoryRoutes"));
 app.use("/api/v1/analytics", require("./routes/analyticsRoutes"));
 app.use("/api/v1/admin", require("./routes/adminRoutes"));
 
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(
+  express.static(
+    path.join(__dirname, "/Blood-Bank-Mern-Stack-Project/client/build")
+  )
+);
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "client/build/index.html"));
+  res.sendFile(
+    path.join(
+      __dirname,
+      "/Blood-Bank-Mern-Stack-Project/client/build/index.html"
+    )
+  );
 });
-//port
+//port Blood-Bank-Mern-Stack-Project\server.js Blood-Bank-Mern-Stack-Project\client Blood-Bank-Mern-Stack-Project/client/build/index.html
 const PORT = process.env.PORT || 9000;
 
 //listen
