@@ -27,9 +27,9 @@ app.use("/api/v1/inventory", require("./routes/inventoryRoutes"));
 app.use("/api/v1/analytics", require("./routes/analyticsRoutes"));
 app.use("/api/v1/admin", require("./routes/adminRoutes"));
 
-app.use(express.static("app/client/build"));
+app.use(express.static("./client/build"));
 app.get("*", function (req, res) {
-  res.sendFile(path.resolve(__dirname, "app/client/build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
 });
 //port
 const PORT = process.env.PORT || 9000;
