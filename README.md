@@ -27,7 +27,8 @@
 Here're some of the project's best features:
 
 *   can see total blood available
-*   can be a life save applicatioin
+*   can be a life saver applicatioin
+*   can contact donar using their mail id
 
 <h2>🛠️ Installation Steps:</h2>
 
